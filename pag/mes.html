@@ -1,0 +1,173 @@
+<!-- PreEntrega3 + Constanza Vilchez -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Control-mes</title>
+    <meta name="description" content="Plataforma que te permite tener tus cuentas del hogar organizadas e informar a tu corredora de manera automática">
+    <meta name="keywords" contet="hogar, casa, cuentas, documento, documentos, corredor, corredora">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
+     <!-- Estilo en bootstrap -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Estilo SASS -->
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+<body>
+
+    <header>
+        <!-- Estructura general Bootstrap -->
+         <nav class="navbar navbar-expand-lg bg-info py-3">
+           <div class="container-fluid">
+             <a class="navbar-brand">
+              <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Control
+             </a>    
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link active" aria-current="page" href="../pag/home.html">Perfil</a>
+                 </li>
+                 <li class="nav-item">
+                   <a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Otros
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="../pag/conceptos.html">Conceptos</a></li>
+                     <li><a class="dropdown-item" href="../pag/contactos.html">Contactos</a></li>
+                     <li><a class="dropdown-item" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a class="nav-link" href="../index.html">Cerrar sesión</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="d-flex" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-primary" type="submit">Buscar</button>
+               </form>
+             </div>
+           </div>
+         </nav>
+        </header>
+
+    <main>
+
+        <h1> Mes X año Y</h1>
+
+        <!-- Indica si se ese mes se puede realizar pagos en el presente -->
+        <input type="radio" name="actividad" value="si">Activo
+        <input type="radio" name="actividad" value="no">No activo
+
+        <p><strong>Recordar:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem voluptatibus omnis, optio enim perspiciatis iste quo error, amet esse, dignissimos earum fuga aperiam? Aliquam adipisci tenetur quas ad libero? </p>
+        
+        <h2>Documentación primordial (para la corredora)</h2>
+        
+        <br>
+
+        <p><strong>Arriendo</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="01">Enviado</option>
+            <option value="02">Recibido</option>
+            <option value="03">Rechazado</option>
+            <option value="04">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <p><strong>Gastos comunes</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="05">Enviado</option>
+            <option value="06">Recibido</option>
+            <option value="07">Rechazado</option>
+            <option value="08">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+
+        <p><strong>Luz</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="09">Enviado</option>
+            <option value="10">Recibido</option>
+            <option value="11">Rechazado</option>
+            <option value="12">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+
+        <p><strong>Agua</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="13">Enviado</option>
+            <option value="14">Recibido</option>
+            <option value="15">Rechazado</option>
+            <option value="16">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br>
+        <p><strong>Gas</strong></p>
+        <label for="estatus"></label>
+        <select name="estatus" id="estatus">
+            <option value="17">Enviado</option>
+            <option value="18">Recibido</option>
+            <option value="19">Rechazado</option>
+            <option value="20">Aprobado</option>
+        </select>
+        <br>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+
+        <br><br>
+
+        <label for="comentario1">Comentarios para la corredora</label>
+
+        <br>
+
+        <textarea name="" id="comentario1" cols="30" rows="10" placeholder="Comentario"></textarea>
+
+        <br><br>
+
+        <h2>Otros comprobantes de pago (no se deben enviar a la corredora)</h2>
+       
+        <br>
+
+        <p><strong>Internet</strong></p>
+        <label for="adjunto">Adjuntar</label>
+        <input type="file" name="adjunto" id="adjunto">
+        <br><br>
+        
+        <label for="comentario2">Comentarios para uno</label>
+
+        <br>
+        
+        <textarea name="" id="comentario2" cols="30" rows="10" placeholder="Comentario"></textarea>
+    </main>
+
+    <footer>
+        <p>@Marca registrada</p>
+    </footer> 
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

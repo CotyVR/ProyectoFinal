@@ -1,0 +1,26 @@
+/* Para que el Footer siempre quede abajo 
+
+html{
+    height: 100%
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+}
+
+footer{
+    margin-top:auto;
+}
+
+
+
+
+
+
+
+
+
+
+*/

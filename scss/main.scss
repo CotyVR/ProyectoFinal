@@ -1,0 +1,304 @@
+
+//Enlace que permite importar mis variables --> _vars.scss
+@import "vars";
+
+
+/* Estructura general */
+@import "footergeneral";
+
+html {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $tipografiaGeneral;
+
+    body{/* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
+        display: flex;
+        flex-direction: column;
+        min-height: 100%;
+        background-color: rgb(251, 248, 248);
+
+        & main{
+            padding: 10px 0px;
+        }
+
+    }
+}
+
+
+/* General: extend para textos, con class --: Recordar que cuando vayas a crear la clase en el HTML no se debe incluir el punto inicial "." */
+
+.boxTexto{/* Si hay texto, esta clase me permite crear una estructura general */
+    line-height: 1;
+    font-weight: 400;
+}
+
+.boxTexto--right{/* Permite que la estructura general, vaya a la derecha */
+    @extend .boxTexto;
+    text-align: right;
+}
+
+.boxTexto--center{/* Permite que la estructura general, vaya a la izquierda (si por algun motivo no puede hacerlo por defecto) */
+    @extend .boxTexto;
+    text-align: center;
+}
+
+
+/* Mixin */
+/* Botones --> Recordar que cuando lo llames en el HTML no se debe incluir el punto*/
+@mixin btnWeb{
+    display: inline-block;
+    border-radius: 20px;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-family: calibri;
+    justify-content: center;
+}
+
+.botonBase{/* Boton general */
+    @include btnWeb();
+    background-color: blue;
+    border: 2px solid blue;
+    color: white;
+    &:hover{
+        background-color: black;
+        border: 2px solid black;
+    }
+}
+
+.botonEspecial{/* Botón para casos especiales, ejemplo "Resetear", "olvido de contraseña", entre otras */
+    @include btnWeb();
+    background-color: yellow;
+    border: 2px solid yellow;
+    color: black;
+
+    &:hover{
+        background-color: black;
+        border: 2px solid black;
+        color: white;
+    }
+}
+
+
+/* Página index */
+
+.boxModel{/* Corresponde al margen de index o de inicio*/
+    background-color: aqua;
+    width: 400px;
+    height: 430px;
+    margin: 100px auto;
+    border: 2px solid blue;
+    padding: 20px;
+
+    & header {/* Borde que contiene la imagen del avatar en index */
+        background-color: rgba(188, 179, 179, 0.942);
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 3px solid black;
+    }
+
+    & h1 {/* marco del "Bienvenido" */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding: 10px;
+    }
+
+    & .divider{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & main form{/* Marco del formulario */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;  
+    }
+
+    & .botonBase{/* Botón de ingreso */
+        display: grid;
+    }
+    
+    & .no-ingreso{ /* Formato de los botones que serian para NO ingresar */  
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
+
+
+/* Página "Home" */
+
+.mainHome{/* Se creo para separar los datos de la tabla */
+display: grid;
+gap: 10px;
+}
+
+#datospersonales{/* Corresponde a los datos personales en el Home */
+    padding: 5px;
+    background-color: rgb(0, 102, 255);
+
+    & .contenidoDatosPersonales{    
+        background-color: rgba(0, 255, 208, 0.952);
+        display: grid;
+        grid-template-columns: 125px 1fr;
+        gap: 10px;
+
+
+        & .marcoImagenUsuario{
+            display: grid;
+            justify-items: center;
+            align-items: center;
+
+            & svg{/* Corresponde al borde del avatar en el Home */
+            background-color: rgb(221, 219, 219);
+            width: 100px;
+            height: 100px;
+            }
+        }
+        
+        & .datosUsuario {
+            display: grid;
+            grid-template-rows: 1fr 1fr 1fr;
+            gap: 2px;
+        
+            & h1 {/* Corresponde a los datos personales en el Home */
+                @extend .boxTexto--center;
+                color: $colorPrincipal;
+            }
+        
+            & h2{
+                @extend .boxTexto;
+                color: $colorSecundario;
+            }
+        
+            & h3{
+                @extend .boxTexto;
+                color: $colorSecundario;
+            }    
+        }     
+    }
+}
+
+
+.table {/* Corresponde a la tabla de home */
+    border: aquamarine;
+    text-align: center;
+}
+
+@media (max-width: $mobile) {/* La idea es que la tabla se ajuste al celular */
+    .table{
+        width: 100%;
+        height: auto;
+    }       
+}
+
+#resumentabla1{    
+    @if $estatusEstado1 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado1 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado1 == AunNoEmpieza {
+            background-color: white;
+            color: white;
+        }
+        @else {
+            background-color: red;
+            color: black;
+    }
+}
+
+#resumentabla2{    
+    @if $estatusEstado2 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado2 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado2 == AunNoEmpieza {
+            background-color: white;
+            color: white;
+        }
+        @else {
+            background-color: red;
+            color: black;
+    }
+}
+
+#resumentabla3{    
+    @if $estatusEstado3 == Pagado {
+        background-color: greenyellow;
+        color: green;
+        } @else if $estatusEstado3 == Pendiente {
+            background-color: yellow;
+            color: red;
+        } @else if $estatusEstado3 == AunNoEmpieza {
+            background-color: white;
+            color: white;
+        }
+        @else {
+            background-color: red;
+            color: black;
+    }
+}
+
+
+
+/* Página "Enlaces cuentas" */
+
+#empresas_externas {/* Corresponde al marco en <Enlaces_cuentas> donde se indica la subcategoría + logo + enlace */
+    padding: 50px;
+    display: flex;
+    gap: 20px;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    & img{/* Corresponde a los logos de las empresas EXTERNAS en <enlaces_cuentas>. Si deseo colocar imagenes de otro tipo, debe ser fuera de este marco */
+        width: 200px;
+        height: 150px;
+        border: 3px solid black;
+    }
+
+    & p a{/* Corresponde al boton de todos los enlaces. Lo hice aquí, porque quería que el contenido (en esta página) fuese de extremo a extremo del marco */
+        display: flex;
+        justify-content: center;
+    }
+
+    & .agua{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 +logo + enlace del grupo "agua" */ 
+        background-color: white;
+        & h2 { /* Marco para "Agua" en <enlaces_cuentas>*/
+            background-color: rgb(0, 149, 255);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    & .luz{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Luz" */ 
+        background-color: white;
+        & h2{ /* Marco para "Luz" en <enlaces_cuentas>*/
+            background-color: rgba(255, 242, 0, 0.927);
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+    
+    & .gas{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Gas" */ 
+        background-color: white;
+        & h2{/* Marco para "Gas" en <enlaces_cuentas>*/
+            background-color: orange;
+            border-radius: 5px;
+            display: flex;
+            justify-content: center;
+        }
+    }
+}

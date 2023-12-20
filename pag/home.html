@@ -1,0 +1,148 @@
+<!-- PreEntrega3 + Constanza Vilchez -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- SEO -->
+    <title>Control-Home</title>
+    <meta name="description" content="Plataforma que te permite tener tus cuentas del hogar organizadas e informar a tu corredora de manera automática">
+    <meta name="keywords" contet="hogar, casa, cuentas, documento, documentos, corredor, corredora">
+    <!-- Logo -->
+    <link rel="shortcut icon" href="../img/Logo.jpg" type="image/x-icon">
+    <!-- Estilo en bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- Estilo en SASS -->
+    <link rel="stylesheet" href="../scss/main.css">
+</head>
+
+<body>
+    <header>
+        <!-- Estructura general Bootstrap -->
+         <nav class="navbar navbar-expand-lg bg-info py-3">
+           <div class="container-fluid">
+             <a class="navbar-brand">
+              <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+                    Control
+             </a>    
+             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+               <span class="navbar-toggler-icon"></span>
+             </button>
+             <div class="collapse navbar-collapse" id="navbarSupportedContent">
+               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                 <li class="nav-item">
+                   <a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a>
+                 </li>
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                     Otros
+                   </a>
+                   <ul class="dropdown-menu">
+                     <li><a class="dropdown-item" href="../pag/conceptos.html">Conceptos</a></li>
+                     <li><a class="dropdown-item" href="../pag/contactos.html">Contactos</a></li>
+                     <li><a class="dropdown-item" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
+                     <li><hr class="dropdown-divider"></li>
+                     <li><a class="nav-link" href="../index.html">Cerrar sesión</a></li>
+                   </ul>
+                 </li>
+               </ul>
+               <form class="d-flex" role="search">
+                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                 <button class="btn btn-primary" type="submit">Buscar</button>
+               </form>
+             </div>
+           </div>
+         </nav>
+        </header>
+
+    <main class="mainHome">
+        <section id="datospersonales"><!-- Marco de los datos -->
+            <div class="contenidoDatosPersonales">
+
+                <div class="marcoImagenUsuario">
+                  <!-- Corresponde al icono de usuario obtenido en Bootstrap -->
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-person-circle" viewBox="0 0 16 16">
+                    <path d="M11 6a3 3 0 1 1-6 0 3 3 0 0 1 6 0"/>
+                    <path fill-rule="evenodd" d="M0 8a8 8 0 1 1 16 0A8 8 0 0 1 0 8m8-7a7 7 0 0 0-5.468 11.37C3.242 11.226 4.805 10 8 10s4.757 1.225 5.468 2.37A7 7 0 0 0 8 1"/>
+                  </svg>
+                </div>
+                
+                <div class="datosUsuario">
+                    <h1>Nombre</h1> 
+                    <h2>Año actual</h2>
+                    <h3>Dirección</h3>
+                </div>
+            </div>
+        </section>
+          
+        <table class="table table-hover">
+          <thead class="table-danger"><!-- Encabezado de la tabla -->
+            <tr>
+              <th scope="col">Estado (completo/incompleto)</th>
+              <th scope="col">Mes</th>
+              <th scope="col">Arriendo</th>
+              <th scope="col">Gastos comunes</th>
+              <th scope="col">Luz</th>
+              <th scope="col">Agua</th>
+              <th scope="col">Gas</th>
+              <th scope="col">Internet</th>
+            </tr>
+          </thead>
+          
+          <tbody>
+            <tr>
+              <th id="resumentabla1" scope="row"><strong>Completo</strong></th><!-- Fil 2 Col 1 -->
+              <td><!-- Fil 2 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
+              <td>$1</td> <!-- GGCC -->
+              <td>$2</td><!-- Luz -->
+              <td>$1</td><!-- Agua -->
+              <td>$3</td><!-- Gas -->
+              <td>$2</td><!-- Internet -->
+            </tr>
+
+            <tr>
+              <th id="resumentabla2" scope="row"><strong>Incompleto</strong></th><!-- Fil 3 Col 1 -->
+              <td><!-- Fil 3 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$5</td><!-- Fil 3 Col 3 (Arriendo) -->
+              <td>$0</td> <!-- GGCC -->
+              <td>$3</td><!-- Luz -->
+              <td>$0</td><!-- Agua -->
+              <td>$4</td><!-- Gas -->
+              <td>$0</td><!-- Internet -->
+            </tr>
+
+            <tr>
+              <th id="resumentabla3" scope="row"><strong>Aún no comienza el mes</strong></th><!-- Fil 4 Col 1 -->
+              <td><!-- Fil 4 Col 2 (mes)-->
+                <nav id="mes">
+                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                  </nav> 
+              </td>
+              <td>$0</td><!-- Fil 4 Col 3 (Arriendo) -->
+              <td>$0</td> <!-- GGCC -->
+              <td>$0</td><!-- Luz -->
+              <td>$0</td><!-- Agua -->
+              <td>$0</td><!-- Gas -->
+              <td>$0</td><!-- Internet -->
+            </tr>
+          </tbody>
+        </table>
+    </main>
+
+    <footer>
+        <p>@Marca registrada</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
