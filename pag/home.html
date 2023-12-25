@@ -68,17 +68,18 @@
                 </div>
                 
                 <div class="datosUsuario">
-                    <h1>Nombre</h1> 
-                    <h2>Año actual</h2>
-                    <h3>Dirección</h3>
+                    <h1>Juan Perez</h1> 
+                    <h2>Fecha: Diciembre, 2023</h2>
+                    <h3>Av. Pedro de Valdivia 47, departamento 5090, Providencia, Región Metropolitana, Chile</h3>
                 </div>
             </div>
         </section>
           
+        <h4>Gastos en la vivienda</h4>
         <table class="table table-hover">
           <thead class="table-danger"><!-- Encabezado de la tabla -->
             <tr>
-              <th scope="col">Estado (completo/incompleto)</th>
+              <th scope="col">Estado</th>
               <th scope="col">Mes</th>
               <th scope="col">Arriendo</th>
               <th scope="col">Gastos comunes</th>
@@ -91,49 +92,50 @@
           
           <tbody>
             <tr>
-              <th id="resumentabla1" scope="row"><strong>Completo</strong></th><!-- Fil 2 Col 1 -->
-              <td><!-- Fil 2 Col 2 (mes)-->
+              <td id="resumentabla1" label="Estado:"  class="table_cell" scope="row"><strong>Completo</strong></td>
+              <td label="Mes:" class="table_cell">
                 <nav id="mes">
-                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                      <a class="botonBase" href="./mes.html" target="_self">Noviembre, 2023</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
                   </nav> 
               </td>
-              <td>$10</td><!-- Fil 2 Col 3 (Arriendo) -->
-              <td>$1</td> <!-- GGCC -->
-              <td>$2</td><!-- Luz -->
-              <td>$1</td><!-- Agua -->
-              <td>$3</td><!-- Gas -->
-              <td>$2</td><!-- Internet -->
+              <td label="Arriendo:" class="table_cell">$450.000</td>
+              <td label="Gastos comunes:" class="table_cell">$102.500</td>
+              <td label="Luz:" class="table_cell">$10.500</td>
+              <td label="Agua:" class="table_cell">$8.000</td>
+              <td label="Gas:" class="table_cell">$2.375</td>
+              <td label="Internet:" class="table_cell">$20.000</td>
             </tr>
 
             <tr>
-              <th id="resumentabla2" scope="row"><strong>Incompleto</strong></th><!-- Fil 3 Col 1 -->
-              <td><!-- Fil 3 Col 2 (mes)-->
+              <td id="resumentabla2" label="Estado:"  class="table_cell" scope="row"><strong>Pendiente</strong></td>
+              <td label="Mes:" class="table_cell">
                 <nav id="mes">
-                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                      <a class="botonBase" href="./mes.html" target="_self">Diciembre, 2023</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
                   </nav> 
               </td>
-              <td>$5</td><!-- Fil 3 Col 3 (Arriendo) -->
-              <td>$0</td> <!-- GGCC -->
-              <td>$3</td><!-- Luz -->
-              <td>$0</td><!-- Agua -->
-              <td>$4</td><!-- Gas -->
-              <td>$0</td><!-- Internet -->
+              <td label="Arriendo:" class="table_cell">$450.000</td>
+              <td label="Gastos comunes:" class="table_cell">$95.300</td>
+              <td label="Luz:" class="table_cell">$8.570</td>
+              <td label="Agua:" class="table_cell">$0</td>
+              <td label="Gas:" class="table_cell">$0</td>
+              <td label="Internet:" class="table_cell">$20.000</td>
             </tr>
 
             <tr>
-              <th id="resumentabla3" scope="row"><strong>Aún no comienza el mes</strong></th><!-- Fil 4 Col 1 -->
-              <td><!-- Fil 4 Col 2 (mes)-->
+              <td id="resumentabla3" label="Estado:"  class="table_cell" scope="row"><strong>Aún no empieza</strong></td>
+              <td label="Mes:" class="table_cell">
                 <nav id="mes">
-                      <a class="botonBase" href="./mes.html" target="_self">Mes X año Y</a> <!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
-                  </nav> 
+                  <a class="botonBase" href="./mes.html" target="_self">Enero, 2024</a><!-- Notar que el boton se creo con la clase (su estructura se encuentra en "main.scss") -->
+                </nav> 
               </td>
-              <td>$0</td><!-- Fil 4 Col 3 (Arriendo) -->
-              <td>$0</td> <!-- GGCC -->
-              <td>$0</td><!-- Luz -->
-              <td>$0</td><!-- Agua -->
-              <td>$0</td><!-- Gas -->
-              <td>$0</td><!-- Internet -->
+              <td label="Arriendo:" class="table_cell">$0</td>
+              <td label="Gastos comunes:" class="table_cell">$0</td>
+              <td label="Luz:" class="table_cell">$0</td>
+              <td label="Agua:" class="table_cell">$0</td>
+              <td label="Gas:" class="table_cell">$0</td>
+              <td label="Internet:" class="table_cell">$0</td>
             </tr>
+            
           </tbody>
         </table>
     </main>

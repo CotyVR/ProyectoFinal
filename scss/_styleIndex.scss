@@ -1,0 +1,78 @@
+/* Página index */
+
+.imagenFondoIndex{ /* Imagen del fondo */
+    @media (min-width: $mobile){
+        min-height: 100vh;/* Para que cubra toda la pantalla */
+        background-image: url(../img/IndexFondoMobile.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+    @media (min-width: $desktop) {
+        min-height: 100vh;/* Para que cubra toda la pantalla */
+        background-image: url(../img/IndexFondo1.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-attachment: fixed;
+        background-size: cover;
+    }
+
+    
+}
+
+.boxModel{/* Corresponde al margen de index o de inicio*/
+    background-color: rgba(0, 255, 255, 0.301);
+    border: 2px solid rgba(0, 0, 255, 0.399);
+    border-radius: 25px;
+    position: relative;
+    min-width: 300px;
+    max-width: $mobile;
+    height: auto;
+    margin: 100px auto;
+    padding: 20px;
+
+    & header {/* Borde que contiene la imagen del avatar en index */
+        background-color: rgba(188, 179, 179, 0.51);
+        border: 2px solid rgba(0, 0, 0, 0.516);
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        border: 3px solid black;
+    }
+
+    & h1 {/* marco del "Bienvenido" */
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        padding: 5px;
+    }
+
+    & .divider{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    & main form{/* Marco del formulario */
+        display: grid;
+        grid-template-columns: 1fr;
+        padding-bottom: 20px;  
+    }
+
+    & .botonBase{/* Botón de ingreso */
+        display: flex;
+        margin-bottom: 10px;
+    }
+    
+    & .no-ingreso{ /* Formato de los botones que serian para NO ingresar */  
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+}
+
+
