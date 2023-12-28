@@ -18,42 +18,27 @@
 
 <body>
     <header>
-        <!-- Estructura general Bootstrap -->
          <nav class="navbar navbar-expand-lg bg-info py-3">
            <div class="container-fluid">
-             <a class="navbar-brand">
-              <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              <a class="navbar-brand">
+                <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
                     Control
-             </a>    
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              </a>    
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                <span class="navbar-toggler-icon"></span>
-             </button>
+              </button>
              <div class="collapse navbar-collapse" id="navbarSupportedContent">
                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                 <li class="nav-item">
-                   <a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a>
-                 </li>
-                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Otros
-                   </a>
-                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="../pag/conceptos.html">Conceptos</a></li>
-                     <li><a class="dropdown-item" href="../pag/contactos.html">Contactos</a></li>
-                     <li><a class="dropdown-item" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
-                     <li><hr class="dropdown-divider"></li>
-                     <li><a class="nav-link" href="../index.html">Cerrar sesión</a></li>
-                   </ul>
-                 </li>
+                 <li><a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a></li>
+                 <li><a class="nav-link" href="../pag/conceptos.html">Conceptos</a></li>
+                 <li><a class="nav-link" href="../pag/contactos.html">Contactos</a></li>
+                 <li><a class="nav-link" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
                </ul>
-               <form class="d-flex" role="search">
-                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                 <button class="btn btn-primary" type="submit">Buscar</button>
-               </form>
+                 <button class="btn btn-primary" type="submit"><a class="nav-link" href="../index.html">Cerrar sesión</a></button>
              </div>
            </div>
          </nav>
-        </header>
+    </header>
 
     <main class="mainHome">
         <section id="datospersonales"><!-- Marco de los datos -->
@@ -75,7 +60,10 @@
             </div>
         </section>
           
-        <h4>Gastos en la vivienda</h4>
+        <div class="presentacion_tabla">
+          <h4>Gastos en la vivienda</h4>
+        </div>
+        
         <table class="table table-hover">
           <thead class="table-danger"><!-- Encabezado de la tabla -->
             <tr>

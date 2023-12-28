@@ -8,7 +8,7 @@
         background-position: center center;
         background-attachment: fixed;
         background-size: cover;
-    }
+            }
     @media (min-width: $desktop) {
         min-height: 100vh;/* Para que cubra toda la pantalla */
         background-image: url(../img/IndexFondo1.jpg);
@@ -21,8 +21,23 @@
     
 }
 
+main{
+    label{
+        font-weight: 600;
+        font-size: 20px;
+    }
+    input{
+        background-color: transparent;
+        border-top: none;
+        border-left: none;
+        border-right: none;
+        border-color: black;
+        margin-bottom: 20px;
+    }
+}
+
 .boxModel{/* Corresponde al margen de index o de inicio*/
-    background-color: rgba(0, 255, 255, 0.301);
+    background-color: rgba(0, 255, 255, 0.46);
     border: 2px solid rgba(0, 0, 255, 0.399);
     border-radius: 25px;
     position: relative;

@@ -17,150 +17,108 @@
 </head>
 <body>
 
-    <header>
-        <!-- Estructura general Bootstrap -->
-         <nav class="navbar navbar-expand-lg bg-info py-3">
-           <div class="container-fluid">
-             <a class="navbar-brand">
-              <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                    Control
-             </a>    
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                 <li class="nav-item">
-                   <a class="nav-link active" aria-current="page" href="../pag/home.html">Perfil</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a>
-                 </li>
-                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Otros
-                   </a>
-                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="../pag/conceptos.html">Conceptos</a></li>
-                     <li><a class="dropdown-item" href="../pag/contactos.html">Contactos</a></li>
-                     <li><a class="dropdown-item" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
-                     <li><hr class="dropdown-divider"></li>
-                     <li><a class="nav-link" href="../index.html">Cerrar sesión</a></li>
-                   </ul>
-                 </li>
-               </ul>
-               <form class="d-flex" role="search">
-                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                 <button class="btn btn-primary" type="submit">Buscar</button>
-               </form>
-             </div>
-           </div>
-         </nav>
-        </header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-info py-3">
+      <div class="container-fluid">
+         <a class="navbar-brand">
+           <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+               Control
+         </a>    
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><a class="nav-link" href="../pag/home.html">Perfil</a></li>
+            <li><a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a></li>
+            <li><a class="nav-link" href="../pag/conceptos.html">Conceptos</a></li>
+            <li><a class="nav-link" href="../pag/contactos.html">Contactos</a></li>
+            <li><a class="nav-link" href="../pag/resolucion_de_dudas.html">Preguntas frecuentes</a></li>
+          </ul>
+            <button class="btn btn-primary" type="submit"><a class="nav-link" href="../index.html">Cerrar sesión</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
+
 
     <main>
+      <h1> Mes X año Y</h1>
 
-        <h1> Mes X año Y</h1>
+        <div class="recordatorio">
+          <h2>Recordar:</h2>
+          
+          <p>Todos los documentos solicitados deben estar con sus pagos al día. En caso de dificultades, debe contactarse inmediatamente con la persona correspondiente.</p>
+        </div>
 
-        <!-- Indica si se ese mes se puede realizar pagos en el presente -->
-        <input type="radio" name="actividad" value="si">Activo
-        <input type="radio" name="actividad" value="no">No activo
+        <div class="obligatorio">
+          <h3>Documentación solicitada por el dueño o dueña de la vivienda</h3>
+            <div class="documentos">
 
-        <p><strong>Recordar:</strong>Lorem ipsum dolor sit amet consectetur adipisicing elit. Mollitia dolorem voluptatibus omnis, optio enim perspiciatis iste quo error, amet esse, dignissimos earum fuga aperiam? Aliquam adipisci tenetur quas ad libero? </p>
-        
-        <h2>Documentación primordial (para la corredora)</h2>
-        
-        <br>
+              <div class="doc_arriendo">
+                <h4>Arriendo</h4>
+                  <img src="../img/arriendo.png" alt="imagen_arriendo" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
 
-        <p><strong>Arriendo</strong></p>
-        <label for="estatus"></label>
-        <select name="estatus" id="estatus">
-            <option value="01">Enviado</option>
-            <option value="02">Recibido</option>
-            <option value="03">Rechazado</option>
-            <option value="04">Aprobado</option>
-        </select>
-        <br>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
+              <div class="doc_gastos_comunes">
+                <h4>Gastos comunes</h4>
+                  <img src="../img/gastos_comunes.png" alt="imagen_gastos_comunes" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
 
-        <p><strong>Gastos comunes</strong></p>
-        <label for="estatus"></label>
-        <select name="estatus" id="estatus">
-            <option value="05">Enviado</option>
-            <option value="06">Recibido</option>
-            <option value="07">Rechazado</option>
-            <option value="08">Aprobado</option>
-        </select>
-        <br>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
+              <div class="doc_luz">
+                <h4>Luz</h4>
+                  <img src="../img/Luz.jpg" alt="imagen_luz" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
 
-        <br>
+              <div class="doc_agua">
+                <h4>Agua</h4>
+                  <img src="../img/Agua.jpg" alt="imagen_agua" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
 
-        <p><strong>Luz</strong></p>
-        <label for="estatus"></label>
-        <select name="estatus" id="estatus">
-            <option value="09">Enviado</option>
-            <option value="10">Recibido</option>
-            <option value="11">Rechazado</option>
-            <option value="12">Aprobado</option>
-        </select>
-        <br>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
+              <div class="doc_gas">
+                <h4>Gas</strong></h4>
+                  <img src="../img/Fuego.jpg" alt="imagen_fuego" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
 
-        <br>
+              <div class="comentario_Due">
+                <label for="comentario1">Si consideras que necesitas dejar algún comentario, te damos este espacio:</label>
+                <textarea name="" id="comentario1" cols="30" rows="10" placeholder="Comentario"></textarea>
+              </div>
+            </div>
+        </div>
 
-        <p><strong>Agua</strong></p>
-        <label for="estatus"></label>
-        <select name="estatus" id="estatus">
-            <option value="13">Enviado</option>
-            <option value="14">Recibido</option>
-            <option value="15">Rechazado</option>
-            <option value="16">Aprobado</option>
-        </select>
-        <br>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
+        <div class="opcional">
+          <h3>Cuentas no solicitadas</h3>
+            <div class="documentos">
+              <div class="doc_internet">               
+                <h4>Internet</h4>
+                  <img src="../img/internet.png" alt="imagen_internet" width="80" height="80">
+                  <label for="adjunto"></label>
+                  <input type="file" name="adjunto" id="adjunto">
+              </div>
+            
+              <div class="comentario_Opc">
+                <label for="comentario2">Si lo deseas, puedes dejar un comentario para ti:</label>
+                <textarea name="" id="comentario2" cols="30" rows="10" placeholder="Comentario"></textarea>
+              </div>
+            </div>    
+        </div>
 
-        <br>
-        <p><strong>Gas</strong></p>
-        <label for="estatus"></label>
-        <select name="estatus" id="estatus">
-            <option value="17">Enviado</option>
-            <option value="18">Recibido</option>
-            <option value="19">Rechazado</option>
-            <option value="20">Aprobado</option>
-        </select>
-        <br>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
-
-        <br><br>
-
-        <label for="comentario1">Comentarios para la corredora</label>
-
-        <br>
-
-        <textarea name="" id="comentario1" cols="30" rows="10" placeholder="Comentario"></textarea>
-
-        <br><br>
-
-        <h2>Otros comprobantes de pago (no se deben enviar a la corredora)</h2>
-       
-        <br>
-
-        <p><strong>Internet</strong></p>
-        <label for="adjunto">Adjuntar</label>
-        <input type="file" name="adjunto" id="adjunto">
-        <br><br>
-        
-        <label for="comentario2">Comentarios para uno</label>
-
-        <br>
-        
-        <textarea name="" id="comentario2" cols="30" rows="10" placeholder="Comentario"></textarea>
+        <div class="botones_para_los_documentos">
+          <div class="botonEspecial">Actualizar</div>
+          <div class="botonBase">Enviar</div>
+        </div>
     </main>
 
     <footer>

@@ -1,0 +1,24 @@
+.accordion-body{
+    h3{
+        font-size: 22px;
+        font-style: italic;
+        color: $colorPrincipal;
+    }
+
+    h4{
+        margin: 10px 0;
+        font-size: 20px;
+        color: $colorTerciario;
+    }
+
+    h5{
+        font-size: 18px;
+        color: $colorSecundario;
+    }
+
+    h6{
+        font-size: 15px;
+        color: $colorPrincipal;
+    }
+}
+

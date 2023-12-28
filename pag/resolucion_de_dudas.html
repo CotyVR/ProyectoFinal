@@ -17,66 +17,167 @@
 </head>
 <body>
 
-    <header>
-        <!-- Estructura general Bootstrap -->
-         <nav class="navbar navbar-expand-lg bg-info py-3">
-           <div class="container-fluid">
-             <a class="navbar-brand">
-              <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
-                    Control
-             </a>    
-             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-             </button>
-             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                 <li class="nav-item">
-                   <a class="nav-link active" aria-current="page" href="../pag/home.html">Perfil</a>
-                 </li>
-                 <li class="nav-item">
-                   <a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a>
-                 </li>
-                 <li class="nav-item dropdown">
-                   <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                     Otros
-                   </a>
-                   <ul class="dropdown-menu">
-                     <li><a class="dropdown-item" href="../pag/conceptos.html">Conceptos</a></li>
-                     <li><a class="dropdown-item" href="../pag/contactos.html">Contactos</a></li>
-                     <li><hr class="dropdown-divider"></li>
-                     <li><a class="nav-link" href="../index.html">Cerrar sesión</a></li>
-                   </ul>
-                 </li>
-               </ul>
-               <form class="d-flex" role="search">
-                 <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                 <button class="btn btn-primary" type="submit">Buscar</button>
-               </form>
-             </div>
-           </div>
-         </nav>
-        </header>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-info py-3">
+      <div class="container-fluid">
+         <a class="navbar-brand">
+           <img src="../img/Logo.jpg" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+               Control
+         </a>    
+         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+         </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li><a class="nav-link" href="../pag/home.html">Perfil</a></li>
+            <li><a class="nav-link" href="../pag/enlaces_cuentas.html">Enlaces cuentas</a></li>
+            <li><a class="nav-link" href="../pag/conceptos.html">Conceptos</a></li>
+            <li><a class="nav-link" href="../pag/contactos.html">Contactos</a></li>
+          </ul>
+            <button class="btn btn-primary" type="submit"><a class="nav-link" href="../index.html">Cerrar sesión</a></button>
+        </div>
+      </div>
+    </nav>
+  </header>
 
-    <main>
-        <h1>¿Qué hacer en caso de...?</h1>
-        <dl>
-            <dt>¿Se quema la casa?</dt>
-            <dd>Llamar a bomberos</dd>
-            <br>
-            <dt>¿Si explota la casa?</dt>
-            <dd>Llamar al seguro</dd>
-            <br>
-            <dt>¿Asaltos?</dt>
-            <dd>Llamar a diosito</dd>
-        </dl>
-    </main>
 
-    <footer>
-        <p>@Marca registrada</p>
-    </footer>
+  <main>
+    
+    <h1>Preguntas frecuentes</h1>
+        
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+    
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            ¿QUÉ ES EL DESAHUCIO?
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Es el acto jurídico unilateral en virtud del cual un contratante manifiesta anticipadamente al otro contratante su intención de poner término al contrato. Este acto jurídico, tiene la particularidad de que no requiere de la aceptación del otro contratante para perfeccionarse.</p>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+            <p>De acuerdo a las nuevas modificaciones y en virtud de lo establecido en el artículo 18-B inciso final, en el procedimiento monitorio no procederá el ejercicio conjunto de la acción de cobro de rentas de arrendamiento y de las acciones de desahucio y restitución que tengan un fundamento distinto del no pago de las rentas de arrendamiento y de las cuentas adeudadas por gastos comunes y de consumo del inmueble arrendado.</p>
+            
+            <p>Sus características son las siguientes:</p>
+            
+            <p>* Es irrevocable.</p>
+            
+            <p>* Debe darse con una anticipación mínima, que depende de la duración del contrato de que se trate.</p>
+            
+            <p>* No requiere de aceptación para perfeccionarse.</p>
+            
+            <p>* Puede ser judicial o extrajudicial.</p>
+            
+            <p>* Procede respecto de contratos de plazo indefinido, y excepcionalmente, respecto de contratos de plazo definido.</p>
+            
+            <p>* La notificación de la demanda constituye el desahucio, salvo que exista oposición, en cuyo caso este se difiere hasta la dictación de la sentencia.</p>
+            
+            <p>* En caso de existir fallo favorable, la ley establece un plazo de desahucio, que es el plazo con que cuenta el arrendatario para restituir el inmueble, una vez desahuciado el contrato.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Desahucio: plazo para hacer entrega del inmueble arrendado
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body"><p>Dicho plazo es de 2 meses desde la notificación de la demanda, más 1 mes por cada año completo que el arrendatario hubiere ocupado el inmueble. El plazo más el aumento no puede exceder de 6 meses.</p>
+          </div>
+        </div>
+      </div>
+      
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Desahucio: efectos por la falta de pago de la renta
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p> Si el arrendatario no paga la renta, el arrendador, conforme a las reglas generales, podrá pedir el cumplimiento forzado del contrato o su terminación, y sea por medio del procedimiento de aplicación general o por medio del procedimiento monotorio. </p>
+
+            <p>Tratándose del arrendamiento de casas, almacenes u otros edificios, el artículo 1977 del Código Civil establece que “La mora de un período entero en el pago de la renta, dará derecho al arrendador, después de dos reconvenciones, entre las cuales medien a lo menos cuatro días, para hacer cesar inmediatamente el arriendo, si no se presta seguridad competente de que se verificará el pago dentro de un plazo razonable, que no bajará de treinta días”. Esta disposición, debemos relacionarla con el artículo 611 del Código de Procedimiento Civil, que dispone en su inciso 1º: “Cuando la terminación del arrendamiento se pida por falta de pago de la renta, de conformidad a lo dispuesto por el artículo 1977 del Código Civil, la segunda de las reconvenciones a que dicho artículo se refiere, se practicará ocurriendo al tribunal respectivo, quien citará a las partes a una audiencia inmediata y procederá en lo demás con arreglo a lo establecido en los artículos precedentes”. </p>
+            
+            <p>En la práctica, entonces, la primera reconvención de pago se formula en la demanda y se entiende hecha al ser notificada; mientras que la segunda se practica como primera diligencia, en el comparendo que se realiza al quinto día de notificada la demanda.</p>
+            
+            <p>Respecto a la reconvención de pago en el procedimiento monitorio se encuentra regulado de forma expresa en el artículo 18 -D- de la ley.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
+            ¿SE PUEDE SUBARRENDAR EL INMUEBLE?
+          </button>
+        </h2>
+        <div id="flush-collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>La Ley número 18.101 sobre arrendamiento de predios urbanos, en el caso de inmuebles destinados a la habitación con plazo fijo superior a un año, en su artículo 5º refiere que el arrendatario siempre podrá subarrendar, salvo cláusula expresa que se lo prohíba; en este último caso, el arrendatario podrá poner término anticipado al contrato sin la obligación de pagar la renta por el período que falte. Dado los términos del artículo 5º, si estamos ante un contrato de duración indefinida o con plazo fijo inferior a un año, o con plazo fijo superior a un año pero tratándose de inmuebles no destinados a la habitación, sino que a oficinas, comercio, industria, etc., volvemos a la regla general del artículo 1946 del Código Civil, requiriéndose autorización expresa del arrendador.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
+            ¿QUE SUCEDE CON LOS CONTRATOS VERBALES EN CUANTO A PRESUNCION DEL MONTO DE LA RENTA?
+          </button>
+        </h2>
+        <div id="flush-collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Cuando los contratos no consten por escrito, se presumirá que la renta es el monto consignado en los depósitos o documentos de pago por al menos tres meses consecutivos y, en caso de que éstos no existan, se presumirá que la renta es la que declare el arrendatario.
+            </p>
+
+            <p>Lo anterior demuestra la importancia de escriturar los contratos de arriendo.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
+            ¿PUEDO HACER EXTENSIVO EL FALLO A LOS SUBARRENDATARIOS?
+          </button>
+        </h2>
+        <div id="flush-collapseSix" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>La sentencia definitiva que se ceda en favor del arrendador puede ser oponible al subarrendatario cuando la demanda le haya sido debidamente notificada.</p>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseSeven" aria-expanded="false" aria-controls="flush-collapseSeven">
+            ¿QUÉ SUCEDE SI EL SUBARRENDATARIO PAGA LA DEUDA DEL SUBAARENDADOR?
+          </button>
+        </h2>
+        <div id="flush-collapseSeven" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            <p>Tal situación se encuentra en el artículo 12 y contempla la facultad para que el subarrendatario pague por el subarrendador las rentas que le debe al arrendador. Si lo hace, enerva la acción teniendo derecho a subrogarse en los derechos del arrendador.</p>
+          </div>
+        </div>
+      </div>
+    
+    </div>
+  
+  </main>
+    
+  <footer>
+    <p>@Marca registrada</p>
+  </footer>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
 
 </body>
 </html>

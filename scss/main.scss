@@ -4,8 +4,6 @@
 
 
 /* Estructura general */
-@import "footergeneral";
-
 html {
     height: 100%;
     margin: 0;
@@ -16,16 +14,54 @@ html {
     body{/* Color de fondo de pantalla. Estoy pensando si lo quiero blanco o de otro color */
         display: flex;
         flex-direction: column;
+        position: relative;
+        padding-bottom: 06em;
         min-height: 100%;
         background-color: rgb(251, 248, 248);
 
-        & main{
-            padding: 10px 0px;
+        main{
+        padding: 10px 0px;
+        margin: 10px;
         }
 
+       
     }
 }
 
+@import "footergeneral";
+
+
+
+/* Estructura de texto */
+h1{
+    font-size: 45px;
+    text-align: center;
+}
+
+h2{
+    font-size: 20px;
+}
+
+h3{
+    font-size: 30px;
+    text-align: justify;
+    margin: 25px 10px;
+}
+
+h4{
+    margin: 5px;
+}
+
+p{
+    text-align: justify;
+}
+
+
+/* Estructura general de las imagenes */
+img{
+    margin: 5px;
+    border: 2px solid black;
+}
 
 /* General: extend para textos, con class --: Recordar que cuando vayas a crear la clase en el HTML no se debe incluir el punto inicial "." */
 
@@ -81,60 +117,19 @@ html {
     }
 }
 
+/* Diseños para cada página: */
+
 /* Index */
 @import "styleIndex";
 
-/* Página "Home" */
+/* Home */
 @import "styleHome";
 
-/* Página "Enlaces cuentas" */
+/* Mes */
+@import "styleMes";
 
-#empresas_externas {/* Corresponde al marco en <Enlaces_cuentas> donde se indica la subcategoría + logo + enlace */
-    padding: 50px;
-    display: flex;
-    gap: 20px;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
+/* Enlaces cuentas */
+@import "style_enlaces_cuentas";
 
-    & img{/* Corresponde a los logos de las empresas EXTERNAS en <enlaces_cuentas>. Si deseo colocar imagenes de otro tipo, debe ser fuera de este marco */
-        width: 200px;
-        height: 150px;
-        border: 3px solid black;
-    }
-
-    & p a{/* Corresponde al boton de todos los enlaces. Lo hice aquí, porque quería que el contenido (en esta página) fuese de extremo a extremo del marco */
-        display: flex;
-        justify-content: center;
-    }
-
-    & .agua{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 +logo + enlace del grupo "agua" */ 
-        background-color: white;
-        & h2 { /* Marco para "Agua" en <enlaces_cuentas>*/
-            background-color: rgb(0, 149, 255);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-        }
-    }
-
-    & .luz{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Luz" */ 
-        background-color: white;
-        & h2{ /* Marco para "Luz" en <enlaces_cuentas>*/
-            background-color: rgba(255, 242, 0, 0.927);
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-        }
-    }
-    
-    & .gas{/* Corresponde al marco en <Enlaces_cuentas> donde se indica el h2 + logo + enlace del grupo "Gas" */ 
-        background-color: white;
-        & h2{/* Marco para "Gas" en <enlaces_cuentas>*/
-            background-color: orange;
-            border-radius: 5px;
-            display: flex;
-            justify-content: center;
-        }
-    }
-}
+/* Contactos */
+@import "styleContactos";

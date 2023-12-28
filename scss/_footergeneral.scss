@@ -2,7 +2,15 @@ footer{/* Corresponde al marco del footer que aparece en todas las paginas*/
     background-color: black;
     color: aliceblue;
     font-family: 'Times New Roman';
+    position: absolute;
+    bottom: 0;
     width: 100%;
+    padding: 0.2em 0;
     margin-top: auto;
-    text-align: center;  
+
+    
+    p{
+        text-align: center;
+        margin: 5px;
+    }
 }
